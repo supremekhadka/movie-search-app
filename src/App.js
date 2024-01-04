@@ -13,7 +13,7 @@ const App = () => {
     const searchMovies = async (title) => {
         const response =  await fetch(`${API_URL}&s=${title}`);
         const result =  await response.json();
-
+    
         result.Response === "True" ? setMovies(result.Search) : console.log("ERROR");;
     }
 

@@ -2,11 +2,12 @@ import React from 'react'
 import './MovieCard.css'
 
 const MovieCard = ({ movie }) => {
+
     return(
         <div className='movie'>
             <div>
                 <div>
-                    <img src={movie.Poster !== 'N/A' ? movie.Poster : "https://via.placeholder.com/400"} alt={movie.Title} />
+                    <img src={((movie.Poster !== 'N/A') && (movie.Poster.Response !== '404'))? movie.Poster : "https://via.placeholder.com/400"} alt={movie.Title} />
                 </div>
                 <div>
                     <div>

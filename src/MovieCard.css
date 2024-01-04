@@ -5,11 +5,15 @@
 }
 
 .movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 10px 5px;
     width: 300px;
     background-color: #ffffff0c;
     border-radius: 10px;
     overflow: hidden;
+    height: 500px;
 }
 
 .movie > div > :nth-child(2){
