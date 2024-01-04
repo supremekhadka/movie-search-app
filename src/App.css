@@ -44,7 +44,7 @@
 }
 
 .search > input{
-    width: 400px;
+    width: 300px;
     height: 35px;
     outline: none;
     border: none;
@@ -81,4 +81,25 @@
 
 .footer a{
     font-weight: 700 !important;
+}
+
+@media screen and (max-width: 375px){
+    .search{
+        position: relative;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        height: 25px;
+        margin: 15px 0 50px 0; 
+    }
+    
+    .search > input{
+        width: 95%;
+        height: 35px;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        padding: 0 20px;
+        font-size: 1em;
+    }
 }

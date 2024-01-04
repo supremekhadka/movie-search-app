@@ -33,6 +33,7 @@
     height: 400px;
     width: 300px;
     object-fit: cover;
+    object-position: center;
 }
 
 .movie span{
@@ -45,4 +46,15 @@
 
 .movie p{
     font-size: 0.9em;
+}
+
+@media screen and (max-width: 375px){
+    .container{
+        width: 90%;
+    }
+
+    .movie{
+        margin: 10px 0;
+        width: 250px;
+    }
 }
