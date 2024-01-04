@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 5px;
+    width: 300px;
+    background-color: #ffffff0c;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.movie > div > :nth-child(2){
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 15px;
+    overflow-wrap: wrap;
+}
+
+.movie > div > :nth-child(2) > div{
+    padding: 0 2px 0 0 ;
+}
+
+.movie img{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.movie span{
+    color: #f9f9f983;
+}
+
+.movie h3{
+    font-size: 1.2em;
+}
+
+.movie p{
+    font-size: 0.9em;
+}
